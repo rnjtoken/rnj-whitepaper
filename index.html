@@ -4,113 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RNJ Token Whitepaper</title>
+  <link rel="icon" href="https://raw.githubusercontent.com/rnjtoken/rinjani-token-logo/main/RinjaniToken_Logo_Final_256x256.png">
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #0d0d0d;
       color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 50px 20px;
     }
 
-    img.logo {
+    .logo {
       width: 120px;
-      margin-bottom: 30px;
-      filter: drop-shadow(0 0 10px rgba(0,255,255,0.7));
+      margin: 50px auto 20px;
+      filter: drop-shadow(0 0 20px #00f0ff80);
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 0.2em;
+      font-size: 28px;
+      margin-bottom: 8px;
     }
 
-    p {
-      color: #bbb;
+    h2 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #cccccc;
       margin-bottom: 40px;
     }
 
-    .button {
-      display: inline-block;
-      background-color: #0044cc;
-      color: #ffffff;
-      padding: 14px 22px;
-      margin: 10px;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1em;
-      box-shadow: 0 0 15px rgba(0, 102, 255, 0.4);
-      transition: all 0.3s ease-in-out;
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
-    .button:hover {
-      background-color: #005ce6;
-      box-shadow: 0 0 25px rgba(0, 102, 255, 0.8);
+    .glow-button {
+      background: #0066ff;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 0 12px #0066ffb0;
+      transition: all 0.3s ease;
+      width: 240px;
+      justify-content: center;
+    }
+
+    .glow-button:hover {
+      box-shadow: 0 0 20px #3399ff, 0 0 30px #3399ff80;
       transform: scale(1.05);
     }
 
-    .button img {
-      width: 20px;
-      vertical-align: middle;
-      margin-right: 10px;
-      transition: transform 0.3s ease;
+    .flag-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      box-shadow: 0 0 5px #00000055;
     }
 
-    .button:hover img {
-      transform: rotate(8deg) scale(1.1);
+    .social {
+      margin-top: 60px;
+      color: #aaa;
     }
 
-    .social-links {
-      margin-top: 50px;
-    }
-
-    .social-links a {
-      color: #00ccff;
-      margin: 0 15px;
+    .social a {
+      color: #00bfff;
       text-decoration: none;
-      font-weight: bold;
+      margin: 0 10px;
+      font-weight: 500;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
+      font-size: 14px;
       color: #555;
-      font-size: 0.9em;
+    }
+
+    @media (max-width: 480px) {
+      .glow-button {
+        width: 90%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- LOGO RNJ -->
-  <img src="https://raw.githubusercontent.com/rnjtoken/rinjani-token-logo/main/RinjaniToken_Logo_Final_256x256.png" alt="RNJ Logo" class="logo" />
+  <!-- Logo -->
+  <img class="logo" src="https://raw.githubusercontent.com/rnjtoken/rinjani-token-logo/main/RinjaniToken_Logo_Final_256x256.png" alt="RNJ Logo">
 
+  <!-- Title -->
   <h1>Welcome to RNJ Token Whitepaper</h1>
-  <p>The Climber Token with a Cause.<br>Download our whitepapers in your preferred language:</p>
+  <h2>The Climber Token with a Cause.<br>Download our whitepapers in your preferred language:</h2>
 
-  <!-- BUTTONS -->
-<a href="RNJ WHITEPAPER ENGLISH.pdf" class="button">
-  <img src="https://cdn-icons-png.flaticon.com/512/330/330418.png" alt="English"> English
-</a>
-
-<a href="RNJ WHITEPAPER BAHASA.pdf" class="button">
-  <img src="https://cdn-icons-png.flaticon.com/512/330/330457.png" alt="Bahasa Indonesia"> Bahasa Indonesia
-</a>
-
-<a href="RNJ WHITEPAPER PORTUGUESE.pdf" class="button">
-  <img src="https://cdn-icons-png.flaticon.com/512/330/330430.png" alt="Português"> Português
-</a>
-
-
-  <!-- SOCIAL LINKS -->
-  <div class="social-links">
-    <p>🔗 Connect with us:</p>
-    <a href="https://t.me/RNJTokenOfficial" target="_blank">Telegram</a> |
-    <a href="https://twitter.com/rnjtoken" target="_blank">Twitter</a> |
-    <a href="https://rnjtoken.io" target="_blank">Website</a>
+  <!-- Buttons -->
+  <div class="button-group">
+    <a href="whitepaper-en.pdf" class="glow-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="UK Flag" class="flag-icon">
+      English
+    </a>
+    <a href="whitepaper-id.pdf" class="glow-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/197/197561.png" alt="ID Flag" class="flag-icon">
+      Bahasa Indonesia
+    </a>
+    <a href="whitepaper-pt.pdf" class="glow-button">
+      <img src="https://cdn-icons-png.flaticon.com/512/197/197386.png" alt="BR Flag" class="flag-icon">
+      Português
+    </a>
   </div>
 
+  <!-- Socials -->
+  <div class="social">
+    <p>🔗 Connect with us:</p>
+    <a href="https://t.me/RinjaniTokenOfficiall" target="_blank">Telegram</a> |
+    <a href="https://twitter.com/rinjanitoken" target="_blank">Twitter</a> |
+    <a href="https://rinjanitoken.io" target="_blank">Website</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    © 2025 RNJToken. All rights reserved.
+    <p>© 2025 RNJToken. All rights reserved.</p>
   </footer>
 
 </body>
