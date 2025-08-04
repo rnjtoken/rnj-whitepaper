@@ -2,69 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RNJ Token Whitepaper</title>
-  <meta name="description" content="Multi-language whitepaper for RNJ Token (The Climber Token with a Cause)">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-    }
-    h1 {
-      color: #2b2b2b;
-    }
-    p {
-      font-size: 18px;
-      color: #555;
-    }
-    .button-container {
-      margin-top: 30px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      background-color: #005bbb;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
       color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    img.logo {
+      width: 120px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 10px rgba(0,255,255,0.7));
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      color: #bbb;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #0044cc;
+      color: #ffffff;
+      padding: 14px 22px;
+      margin: 10px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 10px;
       font-weight: bold;
+      font-size: 1em;
+      box-shadow: 0 0 15px rgba(0, 102, 255, 0.4);
+      transition: all 0.3s ease-in-out;
     }
-    .btn:hover {
-      background-color: #003f88;
+
+    .button:hover {
+      background-color: #005ce6;
+      box-shadow: 0 0 25px rgba(0, 102, 255, 0.8);
+      transform: scale(1.05);
     }
-    .socials {
+
+    .button img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover img {
+      transform: rotate(8deg) scale(1.1);
+    }
+
+    .social-links {
       margin-top: 50px;
     }
-    .socials a {
-      margin: 0 10px;
-      color: #005bbb;
+
+    .social-links a {
+      color: #00ccff;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    .socials a:hover {
-      text-decoration: underline;
-    }
+
     footer {
       margin-top: 60px;
-      font-size: 14px;
-      color: #aaa;
+      color: #555;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to RNJ Token Whitepaper 🌍</h1>
-  <p>The Climber Token with a Cause. Download our whitepapers in your preferred language:</p>
 
-  <div class="button-container">
-    <a href="RNJ WHITEPAPER ENGLISH.pdf" class="btn">📘 English</a>
-    <a href="RNJ WHITEPAPER BAHASA.pdf" class="btn">📙 Bahasa Indonesia</a>
-    <a href="RNJ WHITEPAPER PORTUGUESE.pdf" class="btn">📗 Português</a>
-  </div>
+  <!-- LOGO RNJ -->
+  <img src="https://raw.githubusercontent.com/rnjtoken/rinjani-token-logo/main/RinjaniToken_Logo_Final_256x256.png" alt="RNJ Logo" class="logo" />
 
-  <div class="socials">
+  <h1>Welcome to RNJ Token Whitepaper</h1>
+  <p>The Climber Token with a Cause.<br>Download our whitepapers in your preferred language:</p>
+
+  <!-- BUTTONS -->
+  <a href="RNJ WHITEPAPER ENGLISH.pdf" class="button">
+    <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" alt="English"> English
+  </a>
+
+  <a href="RNJ WHITEPAPER BAHASA.pdf" class="button">
+    <img src="https://cdn-icons-png.flaticon.com/512/330/330430.png" alt="Bahasa"> Bahasa Indonesia
+  </a>
+
+  <a href="RNJ WHITEPAPER PORTUGUESE.pdf" class="button">
+    <img src="https://cdn-icons-png.flaticon.com/512/330/330484.png" alt="Portuguese"> Português
+  </a>
+
+  <!-- SOCIAL LINKS -->
+  <div class="social-links">
     <p>🔗 Connect with us:</p>
     <a href="https://t.me/RNJTokenOfficial" target="_blank">Telegram</a> |
     <a href="https://twitter.com/rnjtoken" target="_blank">Twitter</a> |
@@ -72,7 +109,8 @@
   </div>
 
   <footer>
-    &copy; 2025 RNJToken. All rights reserved.
+    © 2025 RNJToken. All rights reserved.
   </footer>
+
 </body>
 </html>
